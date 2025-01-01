@@ -1,0 +1,42 @@
+.outer {
+    height: 400px;
+    width: 400px;
+    background-color: cornflowerblue;
+    display: flex;
+}
+
+.inner {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(37, 69, 128);
+}
+
+.inner1 {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(37, 69, 128);
+}
+
+.inner2 {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(129, 2, 51);
+}
+
+.inner3 {
+    height: 100px;
+    width: 100px;
+    background-color:palegoldenrod;
+}
+
+.inner4 {
+    height: 100px;
+    width: 100px;
+    background-color:rgb(177, 165, 39);
+}
+
+.inner5 {
+    height: 100px;
+    width: 100px;
+    background-color:rgb(141, 130, 5);
+}

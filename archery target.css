@@ -1,0 +1,39 @@
+:root {
+    --black: #000000;
+    --red: #FF0000;
+    --blue: #0000FF;
+    --yellow: #FFFF00;
+  }
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.rings {
+    border-radius: 50%;
+}
+
+.ring-1 {
+    height: 200px;
+    width: 200px;
+    background: var(--black);
+}
+
+.ring-2 {
+    height: 150px;
+    width: 150px;
+    background: var(--blue);
+}
+
+.ring-3 {
+    height: 100px;
+    width: 100px;
+    background: var(--red);
+}
+
+.ringbullseye {
+    height: 50px;
+    width: 500px;
+    background: var(--yellow);
+}

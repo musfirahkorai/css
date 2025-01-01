@@ -1,0 +1,156 @@
+/* .outer {
+    height: 400px;
+    width: 400px;
+    background-color: cornflowerblue;
+    display: flex;
+}
+
+.inner {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(37, 69, 128);
+}
+
+.inner1 {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(37, 69, 128);
+}
+
+.inner2 {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(129, 2, 51);
+}
+
+.inner3 {
+    height: 100px;
+    width: 100px;
+    background-color:palegoldenrod;
+}
+
+.inner4 {
+    height: 100px;
+    width: 100px;
+    background-color:rgb(177, 165, 39);
+}
+
+.inner5 {
+    height: 100px;
+    width: 100px;
+    background-color:rgb(141, 130, 5);
+} */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.outer {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 2px;
+    background-color: black;
+    padding: 2px;
+}
+
+.inner, .inner1, .inner2, .inner3, .inner4, .inner5, .inner6, .inner7, .inner8 {
+    height: 100px;
+    width: 100px;
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: perspective(600px) rotateY(0);
+    transition: transform 0.6s ease-in-out;
+    position: relative;
+}
+
+.inner:hover {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.inner1 {
+    background-color: rgb(37, 69, 128);
+}
+
+.inner2 {
+    background-color: rgb(129, 2, 51);
+}
+
+.inner3 {
+    background-color: palegoldenrod;
+}
+
+.inner4 {
+    background-color: rgb(177, 165, 39);
+}
+
+.inner5 {
+    background-color: rgb(141, 130, 5);
+}
+
+.inner6 {
+    background-color: rgb(255, 87, 34);
+}
+
+.inner7 {
+    background-color: rgb(76, 175, 80);
+}
+
+.inner8 {
+    background-color: rgb(33, 150, 243);
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.outer {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 2px;
+    background-color: black;
+    padding: 2px;
+}
+
+.cube {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    perspective: 600px;
+}
+
+.cube .front, .cube .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: transform 0.6s ease-in-out;
+}
+
+.cube .front {
+    background-color: cornflowerblue;
+}
+
+.cube .back {
+    background-color: palegoldenrod;
+    transform: rotateY(180deg);
+}
+
+.cube:hover .front {
+    transform: rotateY(180deg);
+}
+
+.cube:hover .back {
+    transform: rotateY(0);
+}
